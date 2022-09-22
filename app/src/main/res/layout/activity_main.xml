@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="104dp"
+        android:layout_height="18dp"
+        android:text="실시간 식물 화면"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <WebView
+        android:layout_width="380dp"
+        android:layout_height="430dp"
+        android:layout_gravity="center"
+        android:paddingBottom="5dp"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="59dp"
+        android:layout_margin="20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:tag="1"
+        >
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:text="현재 온도"
+            tools:layout_editor_absoluteX="86dp"
+            tools:layout_editor_absoluteY="454dp" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ºC"
+            tools:layout_editor_absoluteX="279dp"
+            tools:layout_editor_absoluteY="462dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:tag="1"
+        >
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:text="현재 습도"
+            tools:layout_editor_absoluteX="86dp"
+            tools:layout_editor_absoluteY="504dp" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            tools:layout_editor_absoluteX="279dp"
+            tools:layout_editor_absoluteY="504dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:tag="2">
+
+
+        <Button
+            android:id="@+id/button"
+            android:tag="1"
+            android:layout_width="158dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="식물 사전"
+            tools:layout_editor_absoluteX="215dp"
+            tools:layout_editor_absoluteY="629dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:tag="2"
+            android:clickable="true"
+            android:onClick="crop_report"
+            android:layout_width="158dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="작물 리포트"
+            tools:layout_editor_absoluteX="215dp"
+            tools:layout_editor_absoluteY="563dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:tag="2">
+
+        <Button
+            android:id="@+id/button3"
+            android:tag="3"
+            android:clickable="true"
+            android:onClick="daily_report"
+            android:layout_width="158dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="데일리 리포트"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="563dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:tag="4"
+            android:clickable="true"
+            android:onClick="sensor_set"
+            android:layout_width="158dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="센서 설정"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="629dp" />
+    </LinearLayout>
+</LinearLayout>
