@@ -3,6 +3,7 @@ package com.example.dtq01;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -14,6 +15,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    public void onButtonClick1(View v)    {
+        Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://m.terms.naver.com/list.naver?cid=46676&categoryId=46676"));
+        startActivity(myIntent);
     }
 
     public void crop_report(View v){

@@ -87,7 +87,6 @@
 
         <Button
             android:id="@+id/button"
-            android:tag="1"
             android:layout_width="158dp"
             android:layout_height="49dp"
             android:layout_marginStart="5dp"
@@ -95,15 +94,14 @@
             android:layout_marginEnd="5dp"
             android:layout_marginRight="5dp"
             android:layout_weight="1"
+            android:onClick="onButtonClick1"
+            android:tag="1"
             android:text="식물 사전"
             tools:layout_editor_absoluteX="215dp"
             tools:layout_editor_absoluteY="629dp" />
 
         <Button
             android:id="@+id/button2"
-            android:tag="2"
-            android:clickable="true"
-            android:onClick="crop_report"
             android:layout_width="158dp"
             android:layout_height="49dp"
             android:layout_marginStart="5dp"
@@ -111,6 +109,9 @@
             android:layout_marginEnd="5dp"
             android:layout_marginRight="5dp"
             android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="crop_report"
+            android:tag="2"
             android:text="작물 리포트"
             tools:layout_editor_absoluteX="215dp"
             tools:layout_editor_absoluteY="563dp" />
