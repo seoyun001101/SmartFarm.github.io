@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">dtq01</string>
+    <string name="app_name">DailyReport</string>
+    <string name="app_name2">내용</string>
+
+    <string name="title1">9월 10일</string>
+    <string name="content1">잎이 새로 나오기 시작</string>
+
+    <string name="title2">9월 12일</string>
+    <string name="content2">새로운 줄기가 나오고 있고 분갈이가 필요해보인다.</string>
 </resources>
